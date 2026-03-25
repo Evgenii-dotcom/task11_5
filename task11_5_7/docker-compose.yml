@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  python:
+    build: ./python_app
+    volumes:
+      - shared_data:/data
+
+  go:
+    build: ./go_app
+    volumes:
+      - shared_data:/data
+
+volumes:
+  shared_data:
