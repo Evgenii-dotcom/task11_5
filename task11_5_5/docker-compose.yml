@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  python:
+    build: ./python_app
+    ports:
+      - "5000:5000"
+
+  go:
+    build: ./go_app
+    ports:
+      - "8080:8080"
+
+  rust:
+    build: ./rust_app
+    ports:
+      - "9000:9000"
