@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  python:
+    build: ./python_app
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 128M
