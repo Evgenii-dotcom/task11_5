@@ -14,7 +14,8 @@
 - **Задание 9** — ограничение ресурсов (CPU, память)  
 
 ### Повышенной сложности
-- **Задание P5** — оптимизация Docker образа Python приложения  
+- **Задание P5** — оптимизация Docker образа Python приложения
+- **Задание P7** — cоздание multi-stage сборку для Python-приложения с Rust-расширением  
 - **Задание P2** — Rust приложение с musl для полностью статической сборки  
 
 ### 1. Задание 5 — docker-compose
@@ -46,4 +47,10 @@ cd task11_5/task11_5_p2
 docker build -t rust-musl .
 docker run rust-musl 
 docker images
+```
+### 6. Задание P7 — Python + Rust (PyO3) multi-stage сборка
+```bash
+cd task11_5/task11_5_p7
+docker build -t python-rust-app .
+docker run python-rust-app 
 ```
